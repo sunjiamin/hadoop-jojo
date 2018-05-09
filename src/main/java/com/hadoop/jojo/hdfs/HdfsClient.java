@@ -36,7 +36,6 @@ public class HdfsClient {
     public void init() throws URISyntaxException, IOException, InterruptedException {
         conf = new Configuration();
         conf.set("fs.defaultFS", HdfsClient.HDFS_URL);
-
         //拿到一个文件系统操作的客户端实例对象
         fs = FileSystem.get(new URI(HdfsClient.HDFS_URL),conf,"jojo");
     }
