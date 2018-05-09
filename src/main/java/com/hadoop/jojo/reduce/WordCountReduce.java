@@ -20,7 +20,7 @@ public class WordCountReduce  extends Reducer<Text,IntWritable,Text,IntWritable>
     private IntWritable result = new IntWritable();
     @Override
     protected void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
-        // 累加器，累加每个单词出现的总次数
+        // 累加器， 累加每个单词出现的总次数
         int sum = 0;
         // 遍历values
         for (IntWritable val : values) {

@@ -23,7 +23,7 @@ import java.util.StringTokenizer;
  */
 public class WordCountMap extends Mapper<LongWritable, Text, Text, IntWritable> {
     /**
-     *   输出结果  // KEYOUT
+     *   输出结果 KEYOUT
      */
     private Text word = new Text();
     /**
